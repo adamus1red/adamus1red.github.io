@@ -23,6 +23,7 @@ layout: rss-feed
     {% else %}
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
     {% endif %}
+    <priority>0.5</priority>
   </url>
   {% endfor %}
 
@@ -38,6 +39,7 @@ layout: rss-feed
     {% endif %}
     {% if page.changefreq %}<changefreq>{{ page.changefreq }}</changefreq>{% endif %}
     {% if page.priority %}<priority>{{ page.priority }}</priority>{% endif %}
+    <priority>1.0</priority>
   </url>
   {% endfor %}
 
